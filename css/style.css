@@ -40,7 +40,7 @@ a {
   transition: .3s all;
   color: #319cd1; }
   a:hover, a:focus, a:active {
-    color: #4ebe2a;
+    color: #2aa3be;
     text-decoration: none; }
 
 .parent-nav-link-padding, .site-navbar .navbar-nav > li > a {
