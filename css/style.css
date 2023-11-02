@@ -151,7 +151,7 @@ a {
 /* Container needed to position the overlay. Adjust the width as needed */
 .col {
   position: relative;
-  width: 50%;
+  width: 100%;
   max-width: 300px;
 }
 
@@ -180,7 +180,7 @@ a {
 
 /* When you mouse over the container, fade in the overlay title */
 .col:hover .overlay {
-  opacity: 1;
+  opacity: 0.5;
 }
 
   .site-hero, .site-hero .row {
