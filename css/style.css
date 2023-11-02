@@ -151,7 +151,7 @@ a {
 /* Container needed to position the overlay. Adjust the width as needed */
 .col {
   position: relative;
-  width: 100%;
+  width: 100px;
   max-width: 300px;
 }
 
