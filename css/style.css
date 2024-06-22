@@ -166,7 +166,7 @@ a {
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0);
+  background: #319cd1;
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #319cd1;
   width: 90%;
