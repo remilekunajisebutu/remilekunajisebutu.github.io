@@ -167,14 +167,14 @@ a {
   position: absolute;
   bottom: 0;
   background: #319cd1;
-  background: #319cd1;; /* Black see-through */
+  background: gray; /* Black see-through */
   color: #319cd1;
   width: 90%;
   height: 100%;
   transition: .5s ease;
-  opacity:0;
+  opacity:0.5;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   padding: 20px;
   text-align: center;
 }
