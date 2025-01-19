@@ -152,7 +152,8 @@ a {
 .col {
   /* position: relative; */
   width: 100%;
-  max-width: 300px;
+  height:auto;
+  /* max-width: 300px; */
 }
 
 /* Make the image to responsive */
