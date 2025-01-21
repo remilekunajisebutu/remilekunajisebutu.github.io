@@ -8,12 +8,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/animate.css">-->
+    <!--<link rel="stylesheet" href="css/flexslider.css">-->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/R.png">
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-
     <style>
         body {
             font-family: 'Nunito Sans', Arial, sans-serif;
@@ -95,7 +98,7 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #b3bdc6;
             color: white;
             text-align: center;
             padding: 20px 15px;
@@ -110,27 +113,143 @@
         footer a:hover {
             color: #fff;
         }
+
+        /* site-navbar {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  background: none;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 200;
+  background: #fff; }
+  .site-navbar .navbar-brand {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em; }
+    .site-navbar .navbar-brand:hover {
+      color: #fff; }
+  .site-navbar.bg-light {
+    background: transparent !important; }
+    @media (max-width: 991.98px) {
+      .site-navbar.bg-light {
+        background: #fff !important;
+        top: 0; }
+        .site-navbar.bg-light .navbar-brand {
+          display: inline-block;
+          font-size: 18px;
+          border: 2px solid #000;
+          padding: 2px 10px !important;
+          color: #000; } }
+  .site-navbar .navbar-nav > li > a {
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: .2em; }
+    @media (max-width: 991.98px) {
+      .site-navbar .navbar-nav > li > a {
+        color: rgba(0, 0, 0, 0.7) !important; } }
+  .site-navbar .navbar-nav.active > a {
+    color: #319cd1 !important; }
+  .site-navbar.scrolled {
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%); }
+    .site-navbar.scrolled.bg-light {
+      background: #fff !important; }
+    .site-navbar.scrolled .navbar-brand {
+      display: inline-block;
+      font-size: 18px;
+      border: 2px solid #000;
+      padding: 2px 10px !important; }
+    .site-navbar.scrolled.awake, .site-navbar.scrolled.sleep {
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+    .site-navbar.scrolled.awake {
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      background: #fff !important; }
+    .site-navbar.scrolled.sleep {
+      -webkit-transform: translateY(-90%);
+      -ms-transform: translateY(-90%);
+      transform: translateY(-90%);
+      background: #319cd1 !important; }
+    .site-navbar.scrolled .navbar-brand {
+      color: #000; }
+    .site-navbar.scrolled .dropdown > a:before {
+      color: rgba(0, 0, 0, 0.4); }
+    .site-navbar.scrolled .navbar-nav > li > a {
+      color: rgba(0, 0, 0, 0.7) !important; }
+      .site-navbar.scrolled .navbar-nav > li > a:hover {
+        color: #319cd1 !important; }
+      .site-navbar.scrolled .navbar-nav > li > a.active {
+        color: #319cd1 !important; }
+    .site-navbar.scrolled .navbar-nav > li.active > a {
+      color: #319cd1 !important; } */
+
+    
+        .site-footer {
+  padding: 3em 0; }
+  .site-footer p:last-child {
+    margin-bottom: 0; }
+  .site-footer .social-item {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #b3bdc6;
+    position: relative;
+    border-radius: 50%;
+    font-size: 22px;
+    margin: 0 10px; }
+    .site-footer .social-item > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
     </style>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+
         <div class="container">
-            <a class="navbar-brand" href="index.html">Remi</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#section-about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#section-projects">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#section-contact">Contact</a></li>
-                </ul>
-            </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <a class="navbar-brand" href="index.html">Remi</a>
+          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#section-about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#section-projects">Porfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#section-contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <!-- Header -->
     <header>
@@ -190,8 +309,8 @@
     <!-- Footer -->
     <footer>
         <p>Connect with me on:</p>
-        <a href="https://www.linkedin.com/in/remi-ajisebutu-25a026a5/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/remilekunajisebutu" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/remi-ajisebutu-25a026a5/" class="social-item"><span class="icon-linkedin2"></span></a>
+        <a href="https://github.com/remilekunajisebutu" target="_blank" class="social-item"><span class="icon-github2"></span></a>
     </footer>
 
     <!-- Bootstrap JS -->
