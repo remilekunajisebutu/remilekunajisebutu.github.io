@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Project - Sales Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 10%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+        main {
+            padding: 20px 10%;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        .visualizations img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        .tools span {
+            display: inline-block;
+            background-color: #e7f3e7;
+            color: #4CAF50;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sales Analysis Project</h1>
+        <p>Analyzing sales data to uncover trends and improve decision-making</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#tools">Tools Used</a></li>
+            <li><a href="#visualizations">Visualizations</a></li>
+            <li><a href="#insights">Insights</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p>
+                This project focuses on analyzing a retail company's sales data to identify trends,
+                optimize marketing strategies, and forecast future performance. The dataset includes
+                transactional data spanning five years, covering various regions and product categories.
+            </p>
+        </section>
+        <section id="methodology">
+            <h2>Methodology</h2>
+            <p>
+                - Data cleaning: Removed duplicates and handled missing values.<br>
+                - Exploratory Data Analysis (EDA): Identified key patterns in sales trends.<br>
+                - Visualization: Created dashboards to present insights clearly.<br>
+                - Forecasting: Applied time series analysis to predict future sales.
+            </p>
+        </section>
+        <section id="tools">
+            <h2>Tools Used</h2>
+            <div class="tools">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Tableau</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+            </div>
+        </section>
+        <section id="visualizations" class="visualizations">
+            <h2>Visualizations</h2>
+            <p>Below are some visualizations created during the analysis:</p>
+            <img src="sales_trend.png" alt="Sales Trend Graph">
+            <img src="region_performance.png" alt="Regional Performance Chart">
+        </section>
+        <section id="insights">
+            <h2>Key Insights</h2>
+            <ul>
+                <li>Sales peak during the holiday season, with a 40% increase in Q4.</li>
+                <li>Region X contributes the highest revenue, while Region Y shows potential for growth.</li>
+                <li>Product category A has the highest profit margins but requires better inventory management.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Created by [Your Name] | Contact: [Your Email]</p>
+    </footer>
+</body>
+</html>
