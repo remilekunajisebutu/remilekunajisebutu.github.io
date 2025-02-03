@@ -168,7 +168,7 @@ a {
   position: absolute;
   bottom: 0;
   background-color: #000;
-  /* background: gray; /* Black see-through */ */
+  background: gray; /* Black see-through */
   color: #319cd1;
   width: 90%;
   height: 100%;

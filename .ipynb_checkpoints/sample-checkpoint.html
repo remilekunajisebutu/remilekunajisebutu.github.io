@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,8 +13,37 @@
             background-color: #f9f9f9;
             color: #333;
         }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 10%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #319cd1;
+            border-radius: 5px;
+        }
         header {
-            background-color: #4CAF50;
+            background-color: #319cd1;
             color: white;
             padding: 20px 10%;
             text-align: center;
@@ -30,8 +59,8 @@
             margin-bottom: 30px;
         }
         h2 {
-            color: #4CAF50;
-            border-bottom: 2px solid #4CAF50;
+            color: #319cd1;
+            border-bottom: 2px solid #319cd1;
             padding-bottom: 5px;
         }
         .visualizations img {
@@ -51,7 +80,7 @@
         .tools span {
             display: inline-block;
             background-color: #e7f3e7;
-            color: #4CAF50;
+            color: #319cd1;
             padding: 5px 10px;
             margin: 5px;
             border-radius: 5px;
@@ -60,12 +89,21 @@
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#visualizations">Visualizations</a></li>
+            <li><a href="#insights">Insights</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>Sales Analysis Project</h1>
         <p>Analyzing sales data to uncover trends and improve decision-making</p>
     </header>
     <main>
-        <section>
+        <section id="overview">
             <h2>Project Overview</h2>
             <p>
                 This project focuses on analyzing a retail company's sales data to identify trends,
@@ -73,7 +111,7 @@
                 transactional data spanning five years, covering various regions and product categories.
             </p>
         </section>
-        <section>
+        <section id="methodology">
             <h2>Methodology</h2>
             <p>
                 - Data cleaning: Removed duplicates and handled missing values.<br>
@@ -82,7 +120,7 @@
                 - Forecasting: Applied time series analysis to predict future sales.
             </p>
         </section>
-        <section>
+        <section id="tools">
             <h2>Tools Used</h2>
             <div class="tools">
                 <span>Python</span>
@@ -92,13 +130,13 @@
                 <span>Matplotlib</span>
             </div>
         </section>
-        <section class="visualizations">
+        <section id="visualizations" class="visualizations">
             <h2>Visualizations</h2>
             <p>Below are some visualizations created during the analysis:</p>
             <img src="sales_trend.png" alt="Sales Trend Graph">
             <img src="region_performance.png" alt="Regional Performance Chart">
         </section>
-        <section>
+        <section id="insights">
             <h2>Key Insights</h2>
             <ul>
                 <li>Sales peak during the holiday season, with a 40% increase in Q4.</li>
@@ -112,4 +150,3 @@
     </footer>
 </body>
 </html>
-
