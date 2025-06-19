@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Data Analyst Project - Sales Analysis</title>
+    <title>Tableau Project - Covid Analysis</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -255,8 +255,8 @@
 
     <!-- Header -->
     <header>
-        <h1>Fundraising Analysis</h1>
-        <p>Analysis of Fundraising Trends and Success Factors for Louise's Play "Fever" using Excel</p>
+        <h1>Covid-19 Analysis</h1>
+        <p>Visualizing the Global Toll of Covid-19: A Data-Driven Analysis of Spread and Severity</p>
     </header>
 
     <!-- Main Content -->
@@ -264,67 +264,94 @@
         <section>
             <h2><strong>Overview</strong> </h2>
             <p>
-              Louise's play "Fever" came close to achieving its fundraising goal in a short period. As part of the UTA Bootcamp, an analysis was conducted to evaluate how different campaigns performed based on their launch dates and funding goals.
+              This dashboard provides a global analysis of Covid-19 impacts by summarizing total cases and deaths, geographic spread, and the percentage of population affected over time. It allows decision-makers, researchers, and public health officials to quickly assess where the virus has had the most significant effect and identify patterns by region.
             </p>
             
         </section>
 
-        <section>
-            <h2><strong>Methodology</strong></h2>
+         <section>
+            <h2><strong>Objective</strong></h2>
             <ul>
-                <li>Data cleaning: The dataset was reviewed to remove irrelevant fields and unnecessary information. Columns were filtered to focus on relevant campaigns. The data was checked for accuracy and completeness.</li>
-                <li>The cleaned data was analyzed to identify trends and patterns. Metrics like successful and failed campaigns were calculated. Filtering helped uncover anomalies, such as no failed campaigns in the play subcategory.</li>
-                <li>Visualization: Graphs and charts were created to show trends and outcomes. These visuals highlighted the impact of launch dates and funding goals on campaign success. </li>
-                <li>Forecasting: Trends were used to predict future campaign outcomes. Campaigns in May and June or with funding goals below $5,000 were forecasted to have higher success rates.</li>
+                <li>Visualize the global spread and severity of Covid-19</li>
+                <li>Compare death tolls by continent</li>
+                <li>Show how the percentage of population affected varies by country and time</li>
+                <li>Deliver accessible insights to inform global health strategies</li>
             </ul>
         </section>
 
         <section>
-            <h2><strong>Analysis</strong></h2>
+            <h2><strong>Methodology</strong></h2>
             <p>
-              To complete the analysis, I followed the step-by-step instructions provided in the training module. I encountered challenges during the process, which I addressed by researching solutions through Google and watching instructional videos. For example, I learned how to calculate the percentage of outcomes relative to the funding goal.            
+                This dashboard was developed using Tableau, drawing from global Covid-19 datasets (e.g., WHO, Johns Hopkins). Key indicators such as total cases, deaths, and population impact were aggregated and analyzed by continent and country.
+<p>
+Visual elements include high-level KPI summaries, bar charts for continent-level comparison, a geographic map for country-level impact, and a time series chart showing how infection rates changed over time. The dashboard was designed for interactive exploration, making it accessible to public health analysts, policy-makers, and the general public.
+</p>
             </p>
         </section>
 
         <section>
-          <h2><strong>Challenges</strong></h2>
-          <p>
-            One significant challenge was that I kept getting zero (0) for all failed subcategory plays. Initially, I thought I was making an error, but after filtering through the Kickstarter dataset, I discovered that there were no failed campaigns in the play subcategory.       
-          </p>
-      </section>
+            <h2><strong>Visualizations Explained</strong></h2>
 
-        <section class="visualizations">
-            <h2><strong>Visualizations</strong></h2>
-            <p>Below are some visualizations created during the analysis:</p>
-            <img src="images/excelimg.png" alt="Sales Trend Graph">
-            <!-- <img src="region_performance.png" alt="Regional Performance Chart"> -->
-        </section>
-
-        <section>
-            <h2><strong>Key Insights</strong></h2>
+            <div class='tableauPlaceholder' id='viz1745302742479' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Covid19_17175732414990&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Covid19_17175732414990&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Covid19_17175732414990&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745302742479');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <br>
             <ul>
-                <li>Theater campaigns under the parent category launched in May and June are typically successful.</li>
-                <li>The number of failed campaigns is almost half the number of successful campaigns.</li>
-                <li>There are no canceled campaigns in the play subcategory. The success rate is higher when the funding goal is less than $1,000 or within the range of $1,000 to $4,999.</li>
+                <li>KPI Cards:
+Present high-level statistics for total deaths and cases—allowing immediate benchmarking.</li>
+                <li>Bar Chart (Deaths by Continent):
+Effective for comparing total fatalities and identifying regional hotspots.
+
+</li>
+                <li>Map (Percent Population Affected):
+Offers a geographic distribution view of Covid-19 impact. Bubble sizes and labels indicate severity.</li>
+                <li>Line Chart (Percentage of Population Affected Over Time):
+Tracks infection trends globally, highlighting both surges and improvements.</li>
             </ul>
         </section>
 
+        
+
+        
         <section>
+            <h2><strong>Key Insights</strong></h2>
+            <p>
+               As of the time of analysis, Covid-19 had resulted in over 764 million confirmed cases and nearly 7 million deaths globally. North America emerged as the hardest-hit continent, recording more than 1.18 million deaths, followed by Asia and Europe with 533,495 and 402,232 deaths, respectively.
+                <p>
+
+The percentage of population affected was highest in countries like Mexico, with a rate of 4.35%. Most nations experienced significant early spikes in infection rates, which gradually declined over time. The geographic spread, visualized through a heat map, shows major concentrations of cases across North America, Europe, and parts of South America.
+                </p>
+
+
+            </p>
+        </section>
+
+        <!-- <section>
           <h2><strong>Limitations</strong></h2>
           <ul>
-              <li>The dataset was very large, containing excessive information, which made it cumbersome to work with.</li>
+              <li>Focus on strengthening public health infrastructure in high-fatality regions like North America.</li>
               <li>Some fields in the dataset were irrelevant to the analysis.</li>
              
           </ul>
-      </section>
+      </section> -->
 
       <section>
         <h2><strong>Recommendations</strong></h2>
         <ul>
             <li>Further analysis could focus on campaigns marked as "Staff Pick" to identify additional success factors.</li>
+            <li>Further analysis could focus on campaigns marked as "Staff Pick" to identify additional success factors.</li>
+            <li>Further analysis could focus on campaigns marked as "Staff Pick" to identify additional success factors.</li>
+            <li>Further analysis could focus on campaigns marked as "Staff Pick" to identify additional success factors.</li>
             
         </ul>
     </section>
+        <section>
+            <h2><strong>Conclusion</strong></h2>
+            <p>
+               This dashboard efficiently communicates the global story of Covid-19 using clear and interactive visualizations. It can serve as a foundation for further exploration into epidemiological trends, healthcare disparities, and global response effectiveness.
+               
+
+
+            </p>
+        </section>
     </main>
 
     <!-- Footer -->
