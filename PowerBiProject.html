@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Data Analyst Project - Sales Analysis</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/animate.css">-->
+    <!--<link rel="stylesheet" href="css/flexslider.css">-->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/R.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito Sans', Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #62bdfc;
+            color: white;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #319cd1;
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+            
+        }
+
+        nav .navbar-brand {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #62bdfc;
+        }
+
+        nav .navbar-nav .nav-link {
+            color: #333;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-right: 15px;
+        }
+
+        nav .navbar-nav .nav-link:hover {
+            color: #62bdfc;
+        }
+
+        main {
+            padding: 40px 15px;
+        }
+
+        h2 {
+            color: #62bdfc;
+            border-bottom: 2px solid #62bdfc;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .tools span {
+            display: inline-block;
+            background-color: #e7f3e7;
+            color: #62bdfc;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .visualizations img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #aac0cf;
+            color: white;
+            text-align: center;
+            padding: 20px 15px;
+        }
+
+        footer a {
+            color: #62bdfc;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        .site-navbar {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  margin-bottom: 150px;
+  /* background: none; */
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 200;
+  background: #62bdfc; }
+  .site-navbar .navbar-brand {
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em; }
+    .site-navbar .navbar-brand:hover {
+      color: #fff; }
+  .site-navbar.bg-light {
+    background: transparent !important; }
+    @media (max-width: 991.98px) {
+      .site-navbar.bg-light {
+        background: #fff !important;
+        top: 0; }
+        .site-navbar.bg-light .navbar-brand {
+          display: inline-block;
+          font-size: 18px;
+          border: 2px solid #000;
+          padding: 2px 10px !important;
+          color: #000; } }
+  .site-navbar .navbar-nav > li > a {
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: .2em; }
+    @media (max-width: 991.98px) {
+      .site-navbar .navbar-nav > li > a {
+        color: rgba(0, 0, 0, 0.7) !important; } }
+  .site-navbar .navbar-nav.active > a {
+    color: #319cd1 !important; }
+  .site-navbar.scrolled {
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%); }
+    .site-navbar.scrolled.bg-light {
+      background: #fff !important; }
+    .site-navbar.scrolled .navbar-brand {
+      display: inline-block;
+      font-size: 18px;
+      border: 2px solid #000;
+      padding: 2px 10px !important; }
+    .site-navbar.scrolled.awake, .site-navbar.scrolled.sleep {
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+    .site-navbar.scrolled.awake {
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      background: #fff !important; }
+    .site-navbar.scrolled.sleep {
+      -webkit-transform: translateY(-90%);
+      -ms-transform: translateY(-90%);
+      transform: translateY(-90%);
+      background: #fff !important; }
+    .site-navbar.scrolled .navbar-brand {
+      color: #000; }
+    .site-navbar.scrolled .dropdown > a:before {
+      color: rgba(0, 0, 0, 0.4); }
+    .site-navbar.scrolled .navbar-nav > li > a {
+      color: rgba(0, 0, 0, 0.7) !important; }
+      .site-navbar.scrolled .navbar-nav > li > a:hover {
+        color: #319cd1 !important; }
+      .site-navbar.scrolled .navbar-nav > li > a.active {
+        color: #319cd1 !important; }
+    .site-navbar.scrolled .navbar-nav > li.active > a {
+      color: #319cd1 !important; }
+
+    
+        .site-footer {
+  padding: 3em 0; }
+  .site-footer p:last-child {
+    margin-bottom: 0; }
+  .site-footer .social-item {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #b3bdc6;
+    position: relative;
+    border-radius: 50%;
+    font-size: 22px;
+    margin: 0 10px; }
+    .site-footer .social-item > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="pb-navbar">
+
+        <div class="navbar navbar-expand-lg site-navbar navbar-light bg-light" class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <a class="navbar-brand" href="index.html">Remi</a>
+          <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+            <!-- <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#section-about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#section-projects">Porfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html#section-contact">Contact</a></li>
+            </ul> -->
+          </div>
+        </div>
+      </nav>
+    
+
+    <!-- Header -->
+    <header>
+        <h1>Sales Analysis Project</h1>
+        <p>Analysis of Fundraising Trends and Success Factors for Louise's Play "Fever" using Excel</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2><strong>Project Overview</strong> </h2>
+            <p>
+              LThis project focuses on analyzing a retail company's sales data to identify trends,
+                optimize marketing strategies, and forecast future performance. The dataset includes
+                transactional data spanning five years, covering various regions and product categories.
+            </p>
+            
+        </section>
+
+        <section>
+            <h2><strong>Methodology</strong></h2>
+            <ul>
+                <li>Data cleaning: Removed duplicates and handled missing values.</li>
+                <li>Exploratory Data Analysis (EDA): Identified key patterns in sales trends.</li>
+                <li>Visualization: Created dashboards to present insights clearly. </li>
+                <li>Forecasting: Applied time series analysis to predict future sales.</li>
+            </ul>
+        </section>
+
+        <!-- <section>
+            <h2><strong>Analysis</strong></h2>
+            <p>
+              To complete the analysis, I followed the step-by-step instructions provided in the training module. I encountered challenges during the process, which I addressed by researching solutions through Google and watching instructional videos. For example, I learned how to calculate the percentage of outcomes relative to the funding goal.            
+            </p>
+        </section>
+
+        <section>
+          <h2><strong>Challenges</strong></h2>
+          <p>
+            One significant challenge was that I kept getting zero (0) for all failed subcategory plays. Initially, I thought I was making an error, but after filtering through the Kickstarter dataset, I discovered that there were no failed campaigns in the play subcategory.       
+          </p>
+      </section> -->
+
+        <section class="visualizations">
+            <h2><strong>Visualizations</strong></h2>
+            <p>Below are some visualizations created during the analysis:</p>
+            <!-- <img src="images/excelimg.png" alt="Sales Trend Graph"> -->
+            <!-- <img src="region_performance.png" alt="Regional Performance Chart"> -->
+            <iframe title="zara sales analysis" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZTgxMmE2N2MtOGU5Yi00YzQ5LWI2NDgtZDZmZmYyYzc2NzNkIiwidCI6IjVjYzk5NTZmLWRhOGEtNGE4Yi04ZWE5LTVhY2IyMTFmMTg2ZiJ9&embedImagePlaceholder=true" frameborder="0" allowFullScreen="true"></iframe> 
+        </section>
+
+        <section>
+            <h2><strong>Key Insights</strong></h2>
+            <ul>
+                <li>Sales peak during the holiday season, with a 40% increase in Q4.</li>
+                <li>Region X contributes the highest revenue, while Region Y shows potential for growth.</li>
+                <li>Product category A has the highest profit margins but requires better inventory management.</li>
+            </ul>
+        </section>
+
+        <!-- <section>
+          <h2><strong>Limitations</strong></h2>
+          <ul>
+              <li>The dataset was very large, containing excessive information, which made it cumbersome to work with.</li>
+              <li>Some fields in the dataset were irrelevant to the analysis.</li>
+             
+          </ul>
+      </section>
+
+      <section>
+        <h2><strong>Recommendations</strong></h2>
+        <ul>
+            <li>Further analysis could focus on campaigns marked as "Staff Pick" to identify additional success factors.</li>
+            
+        </ul>
+    </section> -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Connect with me on:</p>
+        <a href="https://www.linkedin.com/in/remi-ajisebutu-25a026a5/" class="social-item"><span class="icon-linkedin2"></span></a>
+        <a href="https://github.com/remilekunajisebutu" target="_blank" class="social-item"><span class="icon-github2"></span></a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
