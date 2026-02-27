@@ -742,3 +742,7 @@ a {
   border-radius: 999px;
   background: #f3f5f7;
 }
+
+.hide-section {
+  display: none;
+}
