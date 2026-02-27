@@ -14,6 +14,7 @@ body {
   background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
   background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
   background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -168,7 +169,6 @@ a {
   position: absolute;
   bottom: 0;
   background-color: #000;
-  /* background: gray; /* Black see-through */ */
   color: #319cd1;
   width: 90%;
   height: 100%;
