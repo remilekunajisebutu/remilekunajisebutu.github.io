@@ -21,15 +21,15 @@ body {
 
 ::-moz-selection {
   background: #000;
-  color: #fff; }
+  color:  #2aa3be; }
 
 ::selection {
   background: #000;
-  color: #fff; }
+  color:  #2aa3be; }
 
 ::-moz-selection {
   background: #000;
-  color: #fff; }
+  color:  #2aa3be; }
 
 h1, h2, h3, h4, h5 {
   color: #2c3e50;
@@ -41,7 +41,7 @@ a {
   transition: .3s all;
   color: #319cd1; }
   a:hover, a:focus, a:active {
-    color: #2aa3be;
+    color:;
     text-decoration: none; }
 
 .parent-nav-link-padding, .site-navbar .navbar-nav > li > a {
