@@ -802,6 +802,8 @@ a {
   transition: all 0.25s ease;
   text-decoration: none;
   color: inherit;
+  min-height: 285px;
+
 }
 
 .project-card:hover {
