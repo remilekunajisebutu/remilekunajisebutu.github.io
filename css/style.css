@@ -770,8 +770,9 @@ a {
 
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  justify-content: center; /* THIS centers the whole row */
+  gap: 20px;
 }
 
 /* Responsive */
